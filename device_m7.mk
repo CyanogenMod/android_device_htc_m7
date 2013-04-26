@@ -69,11 +69,7 @@ PRODUCT_COPY_FILES += \
     device/htc/m7/configs/AudioBTIDnew.csv:system/etc/AudioBTIDnew.csvs \
     device/htc/m7/configs/media_profiles.xml:system/etc/media_profiles.xml \
     device/htc/m7/configs/media_codecs.xml:system/etc/media_codecs.xml \
-    device/htc/m7/dsp/snd_soc_msm/snd_soc_msm:system/etc/snd_soc_msm/snd_soc_msm \
-    device/htc/m7/dsp/snd_soc_msm/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_2x \
-    device/htc/m7/dsp/snd_soc_msm/snd_soc_msm_2x_Fusion3:system/etc/snd_soc_msm/snd_soc_msm_2x_Fusion3 \
-    device/htc/m7/dsp/snd_soc_msm/snd_soc_msm_2x_Fusion3_DMIC:system/etc/snd_soc_msm/snd_soc_msm_2x_Fusion3_DMIC \
-    device/htc/m7/dsp/snd_soc_msm/snd_soc_msm_Sitar:system/etc/snd_soc_msm/snd_soc_msm_Sitar
+    device/htc/m7/dsp/snd_soc_msm/snd_soc_msm_2x_Fusion3:system/etc/snd_soc_msm/snd_soc_msm_2x_Fusion3
 
 # Keylayouts and Keychars
 PRODUCT_COPY_FILES += \
