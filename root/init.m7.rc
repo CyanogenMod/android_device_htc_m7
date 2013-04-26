@@ -204,6 +204,13 @@ on init
 on fs
     mkdir /devlog 0700 root root
     mkdir /ramdump 0700 root root
+    
+    # For firmwares
+    mkdir /firmware 0771 system system
+    mkdir /vendor 0771 system system
+    mkdir /vendor/firmware 0771 system system
+    mkdir /firmware/mdm 0771 system system
+    mkdir /firmware/q6 0771 system system
 
     mount_all ./fstab.m7
 
@@ -220,14 +227,6 @@ on fs
    mkdir /tombstones/lpass 0771 system system
    mkdir /tombstones/dsps 0771 system system
 
-   # For firmwares
-   mkdir /firmware 0771 system system
-   mkdir /vendor 0771 system system
-   mkdir /vendor/firmware 0771 system system
-
-   # 8064 has only mdm, use radio partition for it.
-   mkdir /firmware/mdm 0771 system system
-
    mkdir /data/qcks 0700 root system
    mount tmpfs tmpfs /data/qcks size=20m,mode=0750,gid=1000
 
@@ -237,8 +236,6 @@ on fs
    # 8064 need to created this folder for CSD-QMI usage
    mkdir /data/audio 0775 media audio
    chmod 2775 /data/audio
-
-   mkdir /firmware/q6 0771 system system
 
    # Link widevine drm library path
    symlink /system/vendor/lib /vendor/lib
@@ -477,12 +474,6 @@ on boot
 # an ack packet comes out of order
     write /proc/sys/net/netfilter/nf_conntrack_tcp_be_liberal 1
 
-service postmount /system/bin/sh /init.post_mount.sh
-    class main
-    user root
-    group root
-    oneshot
-
 # Start camera server as daemon
 service qcamerasvr /system/bin/mm-qcamera-daemon
     class late_start
@@ -540,7 +531,6 @@ service kickstart /system/bin/qcks -1 modem_st1 -2 modem_st2 -3 radio_config -4 
     class core
     user root
     oneshot
-    disabled
 
 service memlock /system/bin/memlock
     class main
