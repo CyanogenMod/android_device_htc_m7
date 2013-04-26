@@ -28,9 +28,6 @@ ro.use_data_netmgrd=true
 persist.data_netmgrd_nint=16
 persist.cne.UseCne=false
 
-## set baseband for qmuxd sanity
-ro.baseband.arch = mdm
-
 # NFC
 debug.nfc.fw_download=true
 debug.nfc.fw_boot_download=false
