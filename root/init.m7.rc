@@ -581,6 +581,10 @@ service dhcpcd_p2p /system/bin/dhcpcd -aABKL
     disabled
     oneshot
 
+service dhcpcd_bnep0 /system/bin/dhcpcd -BKLG
+    disabled
+    oneshot
+
 service iprenew_wlan0 /system/bin/dhcpcd -n
     disabled
     oneshot
