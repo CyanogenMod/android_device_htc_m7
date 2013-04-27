@@ -45,6 +45,8 @@ PRODUCT_COPY_FILES += device/htc/m7/configs/thermald.conf:system/etc/thermald.co
 PRODUCT_COPY_FILES += \
     device/htc/m7/configs/vold.fstab:system/etc/vold.fstab
 
+PRODUCT_CHARACTERISTICS := nosdcard
+
 PRODUCT_PACKAGES += \
     libnetcmdiface
 
