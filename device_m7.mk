@@ -18,7 +18,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Boot ramdisk setup
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/root/fstab.m7:root/fstab.m7 \
+    $(LOCAL_PATH)/root/fstab.htc:root/fstab.htc \
     $(LOCAL_PATH)/root/init.m7.rc:root/init.m7.rc \
     $(LOCAL_PATH)/root/ueventd.m7.rc:root/ueventd.m7.rc
 
