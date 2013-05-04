@@ -27,9 +27,6 @@
 # inherit from common msm8960
 -include device/htc/m7-common/BoardConfigCommon.mk
 
-# Include path
-TARGET_SPECIFIC_HEADER_PATH := device/htc/m7/include
-
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := m7
 
