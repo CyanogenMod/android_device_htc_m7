@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# common m7 configs
+$(call inherit-product, device/htc/m7-common/m7-common.mk)
+
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Boot ramdisk setup
@@ -28,9 +31,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_NAME := full_m7
 PRODUCT_DEVICE := m7
-
-# common m7 configs
-$(call inherit-product, device/htc/m7-common/m7-common.mk)
 
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/htc/m7/m7-vendor.mk)

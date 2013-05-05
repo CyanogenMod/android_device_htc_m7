@@ -24,7 +24,7 @@
 # variant, so that it gets overwritten by the parent (which goes
 # against the traditional rules of inheritance).
 
-# inherit from common msm8960
+# inherit from common m7-common
 -include device/htc/m7-common/BoardConfigCommon.mk
 
 # Bootloader
