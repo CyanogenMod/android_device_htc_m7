@@ -19,13 +19,6 @@ $(call inherit-product, device/htc/m7-common/m7-common.mk)
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-# Boot ramdisk setup
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/root/fstab.htc:root/fstab.htc \
-    $(LOCAL_PATH)/root/remount.htc:root/remount.htc \
-    $(LOCAL_PATH)/root/init.m7.rc:root/init.m7.rc \
-    $(LOCAL_PATH)/root/ueventd.m7.rc:root/ueventd.m7.rc
-
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
