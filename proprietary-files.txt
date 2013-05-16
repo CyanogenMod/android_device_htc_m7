@@ -1,4 +1,3 @@
-system/lib/libril.so
 system/lib/libril-qc-qmi-1.so
 system/lib/libril-qcril-hook-oem.so
 system/lib/hw/nfc.m7.so
