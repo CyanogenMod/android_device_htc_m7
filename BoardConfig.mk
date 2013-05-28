@@ -65,4 +65,4 @@ BOARD_PROVIDES_LIBRIL := true
 # mmcblk0p29: 06069e00 00000200 "reserve"
 
 # inherit from the proprietary version
--include vendor/htc/m7/BoardConfigVendor.mk
+-include vendor/htc/m7ul/BoardConfigVendor.mk
