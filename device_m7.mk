@@ -22,6 +22,10 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
+# NFC
+PRODUCT_PACKAGES += \
+	nfc.m7
+
 PRODUCT_NAME := full_m7
 PRODUCT_DEVICE := m7
 
