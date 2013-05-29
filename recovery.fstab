@@ -29,7 +29,7 @@
 
 /boot		emmc		/dev/block/mmcblk0p33
 /cache		ext4		/dev/block/mmcblk0p36
-/data		ext4		/dev/block/mmcblk0p37
+/data		ext4		/dev/block/mmcblk0p37	length=-16384
 /recovery	emmc		/dev/block/mmcblk0p34
 /sdcard		datamedia	/dev/null
 /system		ext4		/dev/block/mmcblk0p35
