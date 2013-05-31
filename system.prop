@@ -4,4 +4,5 @@
 rild.libargs=-d /dev/smd0
 rild.libpath=/system/lib/libril-qc-qmi-1.so
 ro.vendor.extension_library=/system/lib/libqc-opt.so
-ro.telephony.default_network=0
+ro.telephony.default_network=9
+telephony.lteOnGsmDevice=1
