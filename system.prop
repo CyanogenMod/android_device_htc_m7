@@ -1,4 +1,4 @@
-# system.prop for m7ul
+# system.prop for m7
 #
 
 rild.libargs=-d /dev/smd0

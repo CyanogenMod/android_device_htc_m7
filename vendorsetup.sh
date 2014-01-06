@@ -1,1 +1,1 @@
-add_lunch_combo cm_m7ul-eng
+add_lunch_combo cm_m7-eng
