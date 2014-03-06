@@ -1,3 +1,5 @@
+PRODUCT_PACKAGE_OVERLAYS += device/htc/m7-common/overlay
+
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
