@@ -21,6 +21,7 @@ $(call inherit-product-if-exists, vendor/htc/m7/m7-vendor.mk)
 PRODUCT_PACKAGES += \
     FM2 \
     FMRecord \
+    libqcomfm_jni \
     qcom.fmradio
 
 # Inherit from m7-common
