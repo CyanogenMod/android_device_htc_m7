@@ -17,5 +17,8 @@
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/htc/m7/m7-vendor.mk)
 
+# local overlays
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
 # Inherit from m7-common
 $(call inherit-product, device/htc/m7-common/m7-common.mk)
